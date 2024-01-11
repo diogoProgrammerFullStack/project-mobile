@@ -1,0 +1,5 @@
+[caps]
+automationName = "UIAutomator2"
+platformName = "Android"
+deviceName = "RQCTC001HPY"
+app = "C:\\Users\\Diogo Oliveira\\Downloads\\app-universal-release (5).apk"

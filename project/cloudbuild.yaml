@@ -1,0 +1,10 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/carrefour_android_gcp', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/$PROJECT_ID/carrefour_android_gcp']
+- name: 'gcr.io/$PROJECT_ID/carrefour_android_gcp'
+  args: ['ruby','test_launcher.rb']
+- name: 'gcr.io/$PROJECT_ID/carrefour_android_gcp'
+  args: ['ruby','mail_sender.rb']
+

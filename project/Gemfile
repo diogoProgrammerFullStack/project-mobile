@@ -1,0 +1,16 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+gem 'cucumber'
+gem 'rspec'
+gem 'appium_lib'
+gem 'appium_lib_core'
+gem 'selenium-webdriver'
+gem 'report_builder'
+gem 'faker'
+gem 'browserstack-local'
+gem 'ruby-debug-ide', '~> 0.7.3'
+gem 'debase', '~> 0.2.4.1'
+gem 'pry'
+gem "allure-cucumber"

@@ -1,0 +1,9 @@
+#default: --no-source --color --format pretty
+#report: -p default --format json --out features/reports/cucumber.json
+
+<% timestamp = Time.now.strftime("%Y%m%d_%H%M") %>
+
+default: -f pretty -p allure_report -p html_report -p rerun --publish-quiet
+allure_report: -f AllureCucumber::CucumberFormatter --out=logs
+html_report: -f html --out=results/<%=timestamp%>_report.html
+rerun:  -f rerun --out rerun.txt
